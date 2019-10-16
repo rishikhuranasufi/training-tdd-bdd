@@ -1,0 +1,26 @@
+package com.infy.tdd.training;
+
+import com.infy.tdd.training.categories.ClassA;
+import com.infy.tdd.training.categories.ClassB;
+import com.infy.tdd.training.categories.ClassC;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+/**
+ * Created by EQS on 8/2/2018.
+ * PURPOSE - Create 1 class that includes all classes; usage of @RunWith
+ */
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+        AJUnitBasicsHelloWorldTest.class, //test case 1
+        BCalculatorExampleTest.class,     //test case 2
+        EListTest.class,
+        ClassA.class,
+        ClassB.class,
+        ClassC.class,
+        DIgnoreTests.class
+})
+public class GSuiteTest {
+
+
+}
